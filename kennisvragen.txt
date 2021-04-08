@@ -11,7 +11,7 @@
  7. Wat kan je met flex doen ?
  8. Wat is het verschil tussen padding en margin ?
  9. Wat zijn CSS units? Wat kan je ermee?
-
+ Ersen
 
 1. Een tag is een opdracht die door een browser kan worden geïnterpreteerd. 
 HTML gebruikt tags om bijvoorbeeld de positie en weergave van elementen op een pagina aan te geven.
