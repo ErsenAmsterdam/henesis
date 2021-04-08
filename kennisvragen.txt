@@ -1,0 +1,63 @@
+ 1. Wat zijn HTML tags en elementen?
+ 2. Wat zijn HTML attributen? Wat is een class?
+ 3. Wat bedoelen we met external CSS ?
+ 4. Hoe kan je styling toepassen d.m.v classes?
+ 5. Wat zijn de eigenschappen van block elementen en inline elementen?
+ 6. Noem een paar elementen die de eigenschappen van inline elementen
+    hebben.
+    Noem een paar elementen die de eigenschappen van block elementen
+    hebben.
+    Wat zijn de eigenschappen van inline-block ?
+ 7. Wat kan je met flex doen ?
+ 8. Wat is het verschil tussen padding en margin ?
+ 9. Wat zijn CSS units? Wat kan je ermee?
+
+
+1. Een tag is een opdracht die door een browser kan worden geïnterpreteerd. 
+HTML gebruikt tags om bijvoorbeeld de positie en weergave van elementen op een pagina aan te geven.
+Een tag staat altijd tussen een < en een >. Het betreffende element wordt omsloten door een begintag en een eindtag:
+<begintag>content</eindtag> begintag+content+eindtag = element
+Je hebt uizonderingen zoals een <br> tag, en self-closing tags zoals een <img> tag.
+
+2.HTML-attributen zijn speciale woorden die in de openingstag worden gebruikt om het gedrag van het element te bepalen.
+  HTML-attributen zijn een modifier van een HTML-elementtype.
+  Attributen bestaan uit een gereserveerd HTML woord gevolgd door een = en de waarde van hetattribuut tussen enkele of dubbele aanhalingstekens.
+Voorbeeld: <p class='big'>stukje tekst<p>. Hier krijgt 'stukje tekst' de styling van class 'big'. Class is dus attribute. 
+Bijvoorbeeld wordt in een externe stylesheet class gedefinieerd met een '.' en daarna de naam van class.
+In dit geval .big{  }.Tussen { } kan je bijvoorbeeld color:'red'; schrijven, waardoor alle classen met big tekstkleur rood zullen krijgen.
+
+3.Een externe stylesheet die je koppelt aan je HTML bestand door deze in de head gedeelte van je html bestand te plaatsen.
+Voorbeeld: <link href="style.css" rel="stylesheet" type="text/css">. 
+Het maakt je bestanden overzichtelijker. Je kunt dezelfde styling ook gebruiken voor meerdere html bestanden.
+
+4. In html bestand geef je attribuut class='naam'. Vervolgens zet je in je css bestand .naam{},
+tussen curly bracket zet je bijvoorbeeld color:'red'. Alle tags waar je de class='naam' gebruikt krijgen element in kleur rood.
+Je hebt ook Bootstrap waar deze classes al voorgeschreven zijn.
+
+5. Een block element start altijd op een nieuwe regel.
+   Het neemt de hele regel in beslag. Het heeft een top en een bottom margin.
+   Een <p>, <nav> en <div> zijn een paar voorbeelden van een block element.
+
+   Een inline element start niet op een nieuwe regel. 
+   Een inline element neemt alleen zoveel ruimte als nodig.
+   Een <span>, <img> en <a> element zijn een paar voorbeelden van een inline element.
+
+6. Het verschil tussen inline en inline-block is dat je bij inline-block een breedte(width) en hoogte(height) kunt instellen. 
+   Ook de top en bottom margins/paddings zijn instelbaar.
+   Het verschil tussen inline-block en block is dat je bij inline-block  niet naar een nieuwe regel hoeft te gaan, 
+   zodat de element naast een andere element kan komen staan opdezelfde regel. Bij een block element is dit dus niet het geval.
+
+7.Flex is een nieuwe layout module in CSS, die eindelijk het maken van layouts makkelijk maakt. Er zijn allerlei CSS eigenschappen beschikbaar om rijen of kolommen te maken en de onderdelen onderling uit te lijnen en te schalen. Het werkt als volgt: je maakt van een element een flex container met de eigenschap display:flex. Alle directe kinderen worden nu flex-items.
+  Er zijn verschillende eigenschappen voor de container en voor de flex-items mogelijk.
+
+8. Het verschil tussen padding en margin.
+   De padding bepaalt de hoeveelheid (wit)ruimte binnen het element: de ruimte tussen content en de rand om de content. 
+   De margin bepaalt de hoeveelheid (wit)ruimte buiten het element: de ruimte tussen het element en de omgeving.
+
+   Wanneer twee block-elementen boven elkaar liggen, en de bovenste heeft een margin-bottom van 3em, 
+   terwijl de onderste een margin-top heeft van 2em, ligt het in eerste instantie voor de hand dat de tussenruimte 5em wordt. 
+   Dat is niet het geval: de tussenruimte wordt 3em. De margins schuiven als het ware in elkaar. 
+   De term daarvoor is collapsing margins. 
+
+9. CSS heeft verschillende lengte eenheden (CSS units) zoals absolute lengths: cm(centimeters),mm(millimeters),px(pixels)etc.
+   en relative lengths zoals: em, ex , che etc. Bijvoorbeeld 2em font-size betekent 2 keer de grootte van de huidige font-size.
